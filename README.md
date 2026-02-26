@@ -245,19 +245,7 @@ para <beneficio>
 
 ---
 
-# 📊 6. Criterios de Evaluación
-
-| Criterio | Valor |
-|----------|--------|
-| Uso correcto de ramas | 20% |
-| Commits con convención | 20% |
-| Historia clara y no ambigua | 20% |
-| Criterios verificables | 20% |
-| Uso correcto de Markdown | 20% |
-
----
-
-# 🔎 7. Reflexión Final
+# 🔎 6. Reflexión Final
 
 Responder en grupo:
 
