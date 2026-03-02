@@ -23,7 +23,7 @@ Al finalizar esta sesión el estudiante será capaz de:
 
 ---
 
-# 🧠 1. Fundamentación Teórica
+# 1. Fundamentación Teórica
 
 ## ¿Qué es control de versiones?
 
@@ -59,7 +59,7 @@ Plataforma que:
 
 ---
 
-# ✍ 2. Markdown Básico
+# 2. Markdown Básico
 
 ## Títulos
 
@@ -91,9 +91,69 @@ Plataforma que:
 | HU-01 | Registro | Alta |
 ```
 
+# Tabla de Contenido y Redireccionamiento en Markdown
+
+Para que la Tabla de Contenido funcione correctamente en GitHub, debes enlazar cada sección usando enlaces internos.
+
+## ¿Cómo funciona?
+
+GitHub convierte automáticamente los encabezados en enlaces internos.
+
+Ejemplo:
+
+Si tienes este título en tu documento:
+
+```markdown
+## 1. Introduccion
+```
+
+El enlace interno será:
+
+```
+#1-introduccion
+```
+
 ---
 
-# 🌿 3. Buenas Prácticas de Trabajo
+## Cómo crear la Tabla de Contenido
+
+Al inicio del documento, escribe:
+
+```markdown
+## 📑 Tabla de Contenido
+
+1. [Introduccion](#1-introduccion)
+2. [Descripcion General](#2-descripcion-general)
+3. [Requerimientos Funcionales](#3-requerimientos-funcionales)
+4. [Requerimientos No Funcionales](#4-requerimientos-no-funcionales)
+5. [Trazabilidad](#5-trazabilidad)
+```
+
+Luego asegúrate de que las secciones existan exactamente así:
+
+```markdown
+## 1. Introduccion
+## 2. Descripcion General
+## 3. Requerimientos Funcionales
+## 4. Requerimientos No Funcionales
+## 5. Trazabilidad
+```
+
+---
+
+## Reglas Importantes
+
+- No usar tildes en los títulos.
+- Usar exactamente el mismo texto en el enlace.
+- Los espacios se convierten en guiones.
+- Todo va en minúscula.
+- Probar que los enlaces funcionen antes de hacer Pull Request.
+
+Si el enlace no funciona, revisa que el texto del título y el enlace coincidan exactamente.
+
+---
+
+# 3. Buenas Prácticas de Trabajo
 
 ## 🔹 No trabajar en main
 
@@ -147,105 +207,7 @@ Todo cambio debe:
 
 ---
 
-# 🧩 4. Taller Práctico  
-## Construcción colaborativa del SRS
-
----
-
-## 🏢 Contexto del Sistema
-
-Plataforma de reservas de espacios de coworking.
-
----
-
-## 📌 Enunciados por grupo
-
-Cada grupo debe convertir su enunciado en Historia(s) de Usuario con criterios de aceptación usando Markdown.
-
----
-
-### 🟢 Grupo 1 – Registro de usuario
-
-El sistema debe permitir crear cuenta con correo y contraseña.  
-El correo no puede repetirse.  
-La contraseña debe tener mínimo 8 caracteres.  
-Debe mostrarse confirmación de registro exitoso.
-
----
-
-### 🔵 Grupo 2 – Reserva de sala
-
-Un usuario autenticado debe seleccionar sala, fecha y horario disponible.  
-No debe permitir reservar sala ocupada.  
-Debe mostrar costo antes de confirmar.
-
----
-
-### 🟣 Grupo 3 – Cancelación de reserva
-
-Debe permitir cancelar con mínimo 2 horas de anticipación.  
-Si cancela después, se cobra 50%.  
-Debe actualizar disponibilidad.
-
----
-
-### 🟠 Grupo 4 – Calificación del espacio
-
-Solo usuarios que reservaron pueden calificar.  
-Escala de 1 a 5 estrellas.  
-Comentario opcional.
-
----
-
-### 🔴 Grupo 5 – Pago en línea
-
-Debe permitir pago con tarjeta débito o crédito.  
-Debe validar aprobación antes de confirmar.  
-Si falla, no guardar reserva.
-
----
-
-# 📝 5. Instrucciones del Taller
-
-Cada grupo debe:
-
-1. Crear un Issue con el nombre:
-   ```
-   HU-XX - Tema
-   ```
-
-2. Crear rama:
-   ```
-   docs/hu-XX-tema
-   ```
-
-3. Editar el archivo:
-   ```
-   docs/historias-usuario.md
-   ```
-
-4. Usar la plantilla:
-
-```markdown
-## HU-XX — Título
-
-Como <rol>  
-quiero <acción>  
-para <beneficio>
-
-### Criterios de aceptación
-- Dado que ...
-- Cuando ...
-- Entonces ...
-```
-
-5. Realizar mínimo 2 commits.
-6. Crear Pull Request.
-7. Revisar el PR de otro grupo.
-
----
-
-# 🔎 6. Reflexión Final
+# 5. Reflexión Final
 
 Responder en grupo:
 
@@ -256,7 +218,7 @@ Responder en grupo:
 
 ---
 
-## 🎓 Cierre
+## Cierre
 
 El control de versiones no es solo una herramienta técnica.  
 Es una práctica de calidad que garantiza trazabilidad, orden y gestión adecuada de la configuración del software.
