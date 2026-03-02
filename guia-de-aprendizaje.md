@@ -222,3 +222,5 @@ Responder en grupo:
 
 El control de versiones no es solo una herramienta técnica.  
 Es una práctica de calidad que garantiza trazabilidad, orden y gestión adecuada de la configuración del software.
+
+Prueba
